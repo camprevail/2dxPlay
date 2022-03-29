@@ -1,0 +1,7 @@
+*.2dx
+simple.py
+/dist/
+/build/
+/2dxPlay.egg-info/
+__pycache__
+/.idea/
