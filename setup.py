@@ -8,7 +8,7 @@ def read(fname):
 
 setup(
     name='2dxPlay',
-    version='1.0.0',
+    version='1.0.1',
     packages=['twodxPlay'],
     entry_points='''
         [console_scripts]

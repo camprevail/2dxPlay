@@ -19,7 +19,11 @@ class Twodx:
 
     def load(self, file: int):
         with open(self.path, 'rb') as f:
-            f.seek(self.file_offsets[file])
+            try:
+                f.seek(self.file_offsets[file])
+            except IndexError:
+                print(f'Error: Track id [{file}] out of range. Exiting.')
+                exit()
             dx = f.read(4)
             header_size = struct.unpack('I', f.read(4))[0]  # Should be "2DX9";
             wav_size = struct.unpack('I', f.read(4))[0]  # Always 24 bytes, includes dx chars
