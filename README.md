@@ -9,7 +9,9 @@ Install with pip and run it from anywhere.
 Show help: `2dxplay -h`  
 Play a 2dx file: `2dxplay infile.2dx`  
 Extract all tracks from a 2dx file: `2dxplay infile.2dx -e`  
-Extract specific tracks from a 2dx file: `2dxplay infile.2dx -e 1,2-5,10`
+Extract specific tracks from a 2dx file: `2dxplay infile.2dx -e 1,2-5,10`  
+Specify the output directory: `2dxplay infile.2dx -o newfolder -e 1-5`  
+(Default extract folder is `./output/`)
 
 If the file contains more than one wav, it will play all tracks sequentially.  
 Press Ctrl+C to pause playback. You will be presented with a menu:  
